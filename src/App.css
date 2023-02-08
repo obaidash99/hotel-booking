@@ -73,3 +73,70 @@ a {
 		margin: 1rem;
 	}
 }
+
+.hotel-cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 30px 0;
+}
+
+.hotel-card {
+	width: calc(33.33% - 20px);
+	background-color: #fff;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+.hotel-card img {
+	width: 100%;
+	height: 150px;
+	object-fit: cover;
+}
+
+.hotel-card .card-info {
+	padding: 20px;
+}
+
+.hotel-card .card-info h3 {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.hotel-card .card-info p {
+	font-size: 14px;
+	color: #777;
+	margin-bottom: 10px;
+}
+
+.hotel-card .card-info .card-rating {
+	display: flex;
+	align-items: center;
+}
+
+.hotel-card .card-info .card-rating i {
+	font-size: 16px;
+	color: #ffc107;
+	margin-right: 5px;
+}
+
+.hotel-card .card-info .card-price {
+	font-size: 18px;
+	font-weight: bold;
+	color: #333;
+}
+
+@media (max-width: 992px) {
+	.hotel-card {
+		width: calc(50% - 20px);
+	}
+}
+
+@media (max-width: 768px) {
+	.hotel-card {
+		width: 100%;
+	}
+}
