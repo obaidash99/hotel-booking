@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import MenuIcon from '@mui/icons-material/Menu';
 
@@ -10,7 +10,7 @@ const Navbar = () => {
 			<div className="navbar-logo">
 				<Link to="/">Bookings</Link>
 			</div>
-			<div className="navbar-menu">
+			<div className={`navbar-menu ${isOpen ? 'show' : ''}`}>
 				<ul className={`navbar-links ${isOpen ? 'show' : ''}`}>
 					<li>
 						<Link to="/">Home</Link>
